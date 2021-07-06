@@ -46,6 +46,7 @@ class NotesService {
       }
       return APIResponse<bool>(error: true, errorMessage: 'An error occured');
     })
+
     .catchError((_) => APIResponse<bool>(error: true, errorMessage: 'An error occured'));
   }
 }
